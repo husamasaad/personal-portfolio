@@ -100,7 +100,7 @@ async function addProject(arr) {
         <a href="${arr[i].liveUrl}" class="projects__button button button__small">
           <i class="ri-link"></i>
         </a>
-        <a href="" class="projects__button button button__small">
+        <a href="${arr[i].repoUrl}" class="projects__button button button__small">
           <i class="ri-github-line"></i>
         </a>
       </div>
