@@ -1,0 +1,255 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* Colors */
+  --main-clr: #2EBAEF;
+  --main-alt-clr: #46539E;
+  --secondary-clr: #C7D9E7;
+  --secondary-clr-alt: #ffffff;
+  --overlay-clr-1: rgb(200 180 190 / 21%);
+  --overlay-clr-2: rgb(5 4 34 / 73%);
+
+  /* Utilities */
+  --ff-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --item-shadow: rgba(50, 50, 93, 0.1) 0px 6px 12px -2px, rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  /* Commonly  used colors */
+  --clr-white: #fff;
+  --clr-black: #222;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-grey-1: #0f172a;
+  --clr-grey-2: hsl(210, 22%, 49%);
+  --clr-grey-3: hsl(212, 33%, 89%);
+  --clr-grey-4: hsl(210, 40%, 98%);
+  --clr-orange: #F59E0B;
+  --clr-cyan: #14B8A6;
+  --clr-purple: #A855F7;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(--clr-grey-4);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-2);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  max-width: 1000px;
+}
+
+/* Start of App Styling */
+
+main,
+#gallery {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main .section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  gap: 2rem;
+}
+
+main .section img {
+  width: 100%;
+  height: 15em;
+  border-radius: var(--radius);
+  box-shadow: var(--dark-shadow);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+main .section img:hover {
+  box-shadow: var(--light-shadow);
+} 
+
+#cities {
+  margin-top: 10em;
+}
+
+#gallery {
+  background-color: #222;
+  opacity: 0;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: var(--transition);
+}
+#gallery.show {
+  opacity: 1;
+  z-index: 999;
+}
+
+#gallery .container {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+}
+
+#close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 3em;
+  color: var(--clr-white);
+}
+
+.img-screen {
+  width: 80%;
+  margin: 8em auto 0;
+  position: relative;
+}
+
+.img-screen img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.img-screen span {
+  color: var(--clr-white);
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#ar-left {
+  left: -1em;
+}
+#ar-right {
+  right: -1em;
+}
+
+.img-screen h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--clr-white);
+  margin-top: 1em;
+}
+
+.imgs {
+  margin: 2em auto 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 80%;
+  border-radius: var(--radius);
+}
+
+.imgs img {
+  width: 100%;
+  height: 5em;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.imgs img.selected {
+  opacity: 1;
+}

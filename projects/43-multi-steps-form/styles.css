@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Start of Variables */
+:root {
+  /* Colors */
+  --clr-main: hsl(213, 96%, 18%);
+  --clr-sidebar-bg: hsl(243, 100%, 62%);
+  --clr-alt: hsl(228, 100%, 84%);
+  --clr-alt-light: hsl(206, 94%, 87%);
+  --clr-special: hsl(354, 84%, 57%);
+
+  --clr-txt-main: hsl(231, 11%, 63%);
+  --clr-txt-alt: hsl(229, 24%, 87%);
+  --clr-bg-main: hsl(217, 100%, 97%);
+  --clr-bg-checked: hsl(231, 100%, 99%);
+  --clr-form-bg: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --ff-main: 'Ubuntu', sans-serif;
+  --fs-heading: clamp(1.5rem, 1.3571rem + 0.7143vw, 2rem);
+  --fs-body-sm: clamp(0.75rem, 0.75rem + 0vw, 0.75rem);
+  --fs-body-lg: clamp(1rem, 1rem + 0vw, 1rem);
+
+  /* Spaces */
+  --space-3xs-2xs: clamp(0.31rem, calc(0.20rem + 0.54vw), 0.63rem);
+  --space-2xs-xs: clamp(0.56rem, calc(0.43rem + 0.65vw), 0.94rem);
+  --space-xs-s: clamp(0.88rem, calc(0.74rem + 0.65vw), 1.25rem);
+  --space-s-m: clamp(1.13rem, calc(0.86rem + 1.30vw), 1.88rem);
+  --space-m-l: clamp(1.69rem, calc(1.40rem + 1.41vw), 2.50rem);
+  --space-l-xl: clamp(2.25rem, calc(1.73rem + 2.61vw), 3.75rem);
+  --space-xl-2xl: clamp(3.38rem, calc(2.81rem + 2.83vw), 5.00rem);
+  --space-2xl-3xl: clamp(4.50rem, calc(3.46rem + 5.22vw), 7.50rem);
+
+}
+/* End of Variables */
+
+/* Start of Global Rules */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-main);
+  background-color: var(--clr-bg-main);
+}
+
+/*  Start of Typography */
+.h1 {
+  font-size: var(--fs-heading);
+  font-weight: 700;
+  color: var(--clr-main);
+  margin-bottom: var(--space-xs-s);
+}
+
+.h2 {
+  font-size: var(--fs-body-sm);
+  font-weight: 500;
+  color: var(--clr-main);
+  display: block;
+  margin-bottom: var(--space-3xs-2xs);
+}
+
+.h2.sh {
+  color: var(--clr-txt-alt);
+}
+
+.info {
+  font-size: var(--fs-body-lg);
+  color: var(--clr-txt-main);
+  margin-bottom: var(--space-xs-s);
+}
+
+.info.sh {
+  color: var(--clr-form-bg);
+  font-weight: 700;
+  margin: 0;
+}
+
+.sh {
+  text-transform: uppercase;
+}
+/* End of Typography */
+
+
+.container {
+  padding-left: var(--space-s-m);
+  padding-right: var(--space-s-m);
+  margin: 0 auto;
+}
+
+main {
+  margin: 5rem auto 1rem;
+  width: 90vw;
+  max-width: 930px;
+  position: relative;
+  background-color: var(--clr-form-bg);
+  border-radius: 7px;
+  padding-top: var(--space-s-m);
+  padding-bottom: var(--space-s-m);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+@media (min-width: 767px ) {
+  main {
+    width: 90vw;
+    display: flex;
+    padding: var(--space-2xs-xs);
+  }
+}
+/* end of Global Rules */
+
+
+/* Start of Sidebar */
+
+.side-bar {
+  margin: 0 auto;
+  background-color: var(--clr-sidebar-bg);
+  background: url(./assets/images/bg-sidebar-mobile.svg) no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 170px;
+  padding-top: var(--space-m-l);
+  color: var(--clr-form-bg);
+  z-index: -1;
+}
+
+@media (min-width: 767px) {
+  .side-bar {
+    position: static;
+    width: 275px;
+    height: 570px;
+    margin: 0;
+    z-index: 1;
+    background: url(./assets/images/bg-sidebar-desktop.svg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.side-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-s-m);
+}
+
+.side-bar .step-i {
+  display: block;
+  width: 33px;
+  height: 33px;
+  line-height: 32px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid var(--clr-form-bg);
+  text-align: center;
+}
+
+.side-bar .step-i.active {
+  background-color: var(--clr-alt-light);
+  color: var(--clr-main);
+  border: none;
+  box-shadow: 0 0 0 1px rgba(10, 0, 50, 0.2);
+}
+
+.side-bar .step-i.active ~ .step-text .h2.sh {
+  color: var(--clr-form-bg);
+}
+
+.step-text {
+  display: none;
+}
+
+@media (min-width: 767px ) {
+  .side-bar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline-start: var(--space-s-m);
+    gap: var(--space-m-l);
+  }
+
+  .side-bar ul .step {
+    display: flex;
+    gap: var(--space-xs-s);
+  }
+
+
+  .step-text {
+    display: block;
+  }
+}
+
+/* End of Sidebar */
+
+/* Start of forms */
+
+@media (min-width: 767px) {
+  .formarea {
+    padding: var(--space-s-m) var(--space-3xs-2xs);
+    position: relative;
+  }
+}
+
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+/* Start of Step 1 */
+
+input.step-1 {
+  width: 100%;
+  padding: var(--space-2xs-xs);
+  font-size: var(--fs-body-lg);
+  color: var(--clr-main);
+  font-weight: 700;
+  margin-bottom: var(--space-xs-s);
+  border: 1px solid var(--clr-txt-alt);
+  border-radius: 6px;
+}
+
+input.step-1:focus {
+  outline: 1px solid var(--clr-main);
+}
+
+input.step-1::placeholder {
+  font-size: var(--fs-body-lg);
+  font-weight: 500;
+  color: var(--clr-txt-main);
+}
+
+/* End of Step 1 */
+
+/* Start of Step 2 */
+.radio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs-s);
+  position: relative;
+}
+
+.radio > div, .box {
+  padding: var(--space-s-m);
+  border: 1px solid var(--clr-txt-alt);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs-s);
+}
+
+@media (min-width: 767px) {
+  .radio {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .radio > div {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-m-l);
+    padding-inline: var(--space-3xs-2xs);
+  }
+}
+
+.radio > div label, .box label {
+  display: block;
+  color: var(--clr-main);
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label span {
+  color: #be333e;
+  font-weight: 700;
+  font-size: var(--fs-body-sm)
+}
+
+.radio > div .price, .box p {
+  font-size: var(--fs-body-sm);
+  color: var(--clr-txt-main);
+}
+
+.radio input[type="radio"] {
+  position: absolute;
+  height: 75px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+
+.radio > div.checked, .box.checked {
+  background-color: var(--clr-bg-checked);
+  border: 2px solid #4C46FF;
+}
+
+.gift {
+  display: none;
+  font-size: var(--fs-body-sm);
+  color: var(--clr-main);
+  font-weight: 500;
+  margin-top: 5px;
+}
+.gift.show {
+  display: block;
+}
+
+.type {
+  padding: var(--space-s-m) 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-s-m);
+  background-color: var(--clr-bg-checked);
+  border-radius: 6px;
+  margin-bottom: 3rem;
+}
+
+.type input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 45px;
+  height: 25px;
+  border-radius: 30px;
+  background-color: var(--clr-main);
+  position: relative;
+}
+
+.type input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--clr-form-bg);
+  transition: .3s;
+}
+
+.type input[type="checkbox"]:checked:before {
+  left: 25px;
+}
+
+/* End of Step 2 */
+
+/* Start of Step 3 */
+
+.box {
+  gap: 0;
+  justify-content: space-between;
+  margin-bottom: var(--space-2xs-xs);
+}
+
+.box .price {
+  font-size: var(--fs-body-sm);
+  font-weight: 400;
+  color: #4C46FF;
+}
+
+.box input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--clr-txt-alt);
+  border-radius: 4px;
+  position: relative;
+}
+
+.box input[type="checkbox"]:checked {
+  background-color: #4C46FF;
+  position: relative;
+}
+
+.box input[type="checkbox"]:checked::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: .7rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  line-height: 20px;
+  text-align: center;
+  color: var(--clr-form-bg);
+}
+
+/* End of Step 3 */
+
+/* Start of step 4 */
+
+#step-4 {
+  padding-top: var(--space-s-m);
+}
+
+#step-4 .box:not(:last-of-type) {
+  border: none;
+  padding: 8px var(--space-s-m);
+  margin-bottom: 0;
+  background-color: var(--clr-bg-checked);
+}
+
+#step-4 .box:first-of-type {
+  border-bottom: 1px solid var(--clr-txt-alt);
+  padding-bottom: 15px;
+}
+
+#step-4 .box:last-of-type {
+  border: none;
+}
+
+.f-plan {
+  display: block;
+  color: var(--clr-main);
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.text  #change {
+  color: var(--clr-txt-main);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.f-price {
+  font-size: var(--fs-body-sm);
+  font-weight: 700;
+  color: var(--clr-main);
+}
+
+.f-price.add {
+  font-weight: 700;
+  color: #68747F;
+}
+
+.f-price.tot {
+  color: #554FCC;
+}
+
+.f-add {
+  display: block;
+  color: var(--clr-txt-main);
+  font-weight: 400;
+
+}
+
+/* End of step 4 */
+
+/* Start of Step-5 */
+
+#step-5 {
+  padding: var(--space-2xl-3xl) 0;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* End of Step-5 */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0 var(--space-s-m);
+  background-color: var(--clr-form-bg);
+  width: 100%;
+  height: 74px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 767px) {
+  footer {
+    position: absolute;
+    padding: 0 var(--space-xs-s);
+  }
+}
+
+footer #next-btn {
+  border: none;
+  border-radius: 6px;
+  font-size: var(--fs-body-lg);
+  height: clamp(2.5625rem, 2.4554rem + 0.5357vw, 2.9375rem);
+  width: clamp(6rem, 5.5714rem + 2.1429vw, 7.5rem);
+  font-weight: 700;
+  font-family: var(--ff-main);
+  color: var(--clr-form-bg);
+  background-color: var(--clr-main);
+  cursor: pointer;
+}
+
+footer #go-back {
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--clr-txt-main);
+  background-color: transparent;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+/* End of forms */

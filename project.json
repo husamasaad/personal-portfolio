@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Chessboard",
+    "details": "a simple chessboard application built with JavaScript and HTML. It allows you to play chess with a friend on the same device by clicking on the squares to move the pieces.",
+    "img": "./assets/img/projects/chess.png",
+    "liveUrl": "./projects/49-Chess/",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/49-Chess"
+  },
+  {
+    "id" : 2,
+    "name": "Space Tourism",
+    "details": "This is a solution to the Space tourism website challenge on Frontend Mentor, I built with the help of Kevin Powell tutorial",
+    "img": "./assets/img/projects/spaceTourism.png",
+    "liveUrl": "./projects/48-Space-Tourism",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/48-Space-Tourism"
+  },
+  {
+    "id": 3,
+    "name": "Sneakers",
+    "details": "This is a solution to the E-commerce product page challenge on Frontend Mentor.",
+    "img": "./assets/img/projects/sneakers.png",
+    "liveUrl": "./projects/47-product-page",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/47-product-page"
+  },
+  {
+    "id": 4,
+    "name": "Calender",
+    "details": "This App was built to practice working with Dates, it is a Responsive dynamic Calender with an events lists. I built this following along with a Youtube totorial and then tried to adjust the design a little more",
+    "img": "./assets/img/projects/calender.png",
+    "liveUrl": "./projects/46-Calender",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/46-Calender"
+  },
+  {
+    "id": 5,
+    "name": "Notes",
+    "details": "a Responsive Sticky Notes App that uses the LocalStorgae to save the notes you create for you",
+    "img": "./assets/img/projects/noteApp.png",
+    "liveUrl": "./projects/45-Note-app",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/45-Note-app"
+  },
+  {
+    "id": 6,
+    "name": "Connect Four",
+    "details": "a web-based connect four game built with JavaScript and HTML. It allows you to play connect four with a friend on the same device. The game logic checks for horizontal, vertical and diagonal matches of four pieces of the same color.",
+    "img": "./assets/img/projects/connectFour.png",
+    "liveUrl": "./projects/44-connect-four",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/44-connect-four"
+  },
+  {
+    "id": 7,
+    "name": "Multi-Steps Form",
+    "details": "This is a solution to the Multi-step form challenge on Frontend Mentor",
+    "img": "./assets/img/projects/multi-steps-forum.png",
+    "liveUrl": "./projects/43-multi-steps-form",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/43-multi-steps-form"
+  },
+  {
+    "id": 8,
+    "name": "Azkar: A Web App for Daily Islamic Remembrance",
+    "details": " a web application that helps Muslims perform their daily remembrance of Allah by providing them with a selection of azkar (supplications) and the number of times they should be recited. The application is built with vanilla JavaScript. This project demonstrates how to use JavaScript to create a simple and useful app for a specific audience.",
+    "img": "./assets/img/projects/azkar.png",
+    "liveUrl": "./projects/42-Azkar",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/42-Azkar"
+  },
+  {
+    "id": 9,
+    "name": "Pricing Component",
+    "details": "This is a solution to the Interactive pricing component challenge on Frontend Mentor.",
+    "img": "./assets/img/projects/pricing-component.png",
+    "liveUrl": "./projects/41-interactive-pricing-component",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/41-interactive-pricing-component"
+  },
+  {
+    "id": 10,
+    "name": "Currency Converter",
+    "details": "This App was built to practice working with curency API, you choose your currency and the new one, then type in the amount you want to convert",
+    "img": "./assets/img/projects/currency-app.png",
+    "liveUrl": "./projects/40-Currency-App",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/40-Currency-App"
+  },
+  {
+    "id": 11,
+    "name": "Speed Test",
+    "details": "This a typing speed game that generates Quotes Randomly using Fetch with an online api and test how fast can you type them",
+    "img": "./assets/img/projects/speedTest.png",
+    "liveUrl": "./projects/38-Speed-Test",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/38-Speed-Test"
+  },
+  {
+    "id": 12,
+    "name": "Kasper Template",
+    "details": "This is Kasper Template Project built using HTML and CSS and Javascript. I built this after watching Elzero Tutorial for the css and html then added the Javascript part on my own",
+    "img": "./assets/img/projects/kasper.png",
+    "liveUrl": "./projects/37-Kasper-Template",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/37-Kasper-Template"
+  },
+  {
+    "id": 13,
+    "name": "Leon Template",
+    "details": "This is Leon Template Project built using HTML and CSS and Javascript. I built this after watching Elzero Tutorial for the css and html then added the Javascript part on my own",
+    "img": "./assets/img/projects/leon.png",
+    "liveUrl": "./projects/36-leon_template",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/36-leon_template"
+  },
+  {
+    "id": 14,
+    "name": "Blogr landing page",
+    "details": "This is a solution to the Blogr landing page challenge on Frontend Mentor",
+    "img": "./assets/img/projects/blogr.png",
+    "liveUrl": "./projects/35-landing_page",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/35-landing_page"
+  },
+  {
+    "id": 15,
+    "name": "Furnitures",
+    "details": "a Menu App with Search Filter and Dark mode",
+    "img": "./assets/img/projects/filters.png",
+    "liveUrl": "./projects/34-Filters",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/34-Filters"
+  },
+  {
+    "id": 16,
+    "name": "Gallery",
+    "details": "a Photo Gallery with categories and modal screen",
+    "img": "./assets/img/projects/gallery.png",
+    "liveUrl": "./projects/33-Gallery",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/33-Gallery"
+  },
+  {
+    "id": 17,
+    "name": "Numbers Stats",
+    "details": "a section of numbers that start counting when scrolled to",
+    "img": "./assets/img/projects/numberStats.png",
+    "liveUrl": "./projects/32-Numbers_stats",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/32-Numbers_stats"
+  },
+  {
+    "id": 18,
+    "name": "Things To-do",
+    "details": "a web app that lets you create, edit and delete tasks and, saves your data automatically, it also helps you measure how much time you spend on each task. Whenever you finish a task, it will ask you how long it took and record it for you. You can then see at end of the day how much hours did you work.",
+    "img": "./assets/img/projects/thingsToDo.png",
+    "liveUrl": "./projects/31-Things_ToDo",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/31-Things_ToDo"
+  },
+  {
+    "id": 19,
+    "name": "Math Quiz",
+    "details": "This is a simple math Quizz with a timer",
+    "img": "./assets/img/projects/quiz.png",
+    "liveUrl": "./projects/30-Quiz",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/30-Quiz"
+  },
+  {
+    "id": 20,
+    "name": "Tic-Tac-Toe",
+    "details": "This is a tic-tac-toe game using minmax algorithm, I built this following youtube videos",
+    "img": "./assets/img/projects/tic-tac-toe.png",
+    "liveUrl": "./projects/29-Tic_Tac_Toe",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/29-Tic_Tac_Toe"
+  },
+  {
+    "id": 21,
+    "name": "HangMan",
+    "details": "This is a HangMan game that I built after watching Elzero tutorial then costomized the design",
+    "img": "./assets/img/projects/hangMan.png",
+    "liveUrl": "./projects/27-HangMan",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/27-HangMan"
+  },
+  {
+    "id": 22,
+    "name": "StopWatch",
+    "details": "a simple Stop Watch with pause and play and reset buttons",
+    "img": "./assets/img/projects/stopWatch.png",
+    "liveUrl": "./projects/24-StopWatch",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/24-StopWatch"
+  },
+  {
+    "id": 23,
+    "name": "slider",
+    "details": "a simble image slider built from Elzero tutorial",
+    "img": "./assets/img/projects/slider.png",
+    "liveUrl": "./projects/23-Slider",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/23-Slider"
+  },
+  {
+    "id": 24,
+    "name": "Random Quote",
+    "details": "a random quote generator",
+    "img": "./assets/img/projects/qoutes.png",
+    "liveUrl": "./projects/22-Random_Quote_Generator",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/22-Random_Quote_Generator"
+  },
+  {
+    "id": 25,
+    "name": "Modal",
+    "details": "a modal that slides down from top 'first time I learned it:)'",
+    "img": "./assets/img/projects/modal.png",
+    "liveUrl": "./projects/21-Where_Is_Our_Model",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/21-Where_Is_Our_Model"
+  },
+  {
+    "id": 26,
+    "name": "Calculator",
+    "details": "a simple calculator I built through the forntEnd Masters Bootcamp",
+    "img": "./assets/img/projects/calculator.png",
+    "liveUrl": "./projects/20-Calculator",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/20-Calculator"
+  },
+  {
+    "id": 27,
+    "name": "Githup Repos",
+    "details": "working with the github API, I built this from Elzero Tutorial video",
+    "img": "./assets/img/projects/githupRepos.png",
+    "liveUrl": "./projects/19-Github_Repo",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/19-Github_Repo"
+  },
+  {
+    "id": 28,
+    "name": "FAQ accordion card",
+    "details": "This is a solution to the [FAQ accordion card challenge on Frontend Mentor]",
+    "img": "./assets/img/projects/faq.png",
+    "liveUrl": "./projects/18-faq-accordion-card-main",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/18-faq-accordion-card-main"
+  },
+  {
+    "id": 29,
+    "name": "Local Storage",
+    "details": "From: How to Control the LocalStorage video by Elzero",
+    "img": "./assets/img/projects/localStorage.png",
+    "liveUrl": "./projects/16-Controling_LocalStorage",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/16-Controling_LocalStorage"
+  },
+  {
+    "id": 30,
+    "name": "CountDown",
+    "details": "Coming Soon Countdown Section",
+    "img": "./assets/img/projects/countdown.png",
+    "liveUrl": "./projects/12-countdown",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/projects/12-countdown"
+  }
+]

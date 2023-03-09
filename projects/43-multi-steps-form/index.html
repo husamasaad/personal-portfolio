@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/694772d257.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+</head>
+<body>
+  <main>
+    <!-- Sidebar start -->
+    <nav class="side-bar">
+      <ul>
+        <li class="step">
+          <span class="step-i active">1</span>
+          <div class="step-text">
+            <h2 class="h2 sh">step 1</h2>
+            <p class="info sh">your info</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-i">2</span>
+          <div class="step-text">
+            <h2 class="h2 sh">step 2</h2>
+            <p class="info sh">select plan</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-i">3</span>
+          <div class="step-text">
+            <h2 class="h2 sh">step 3</h2>
+            <p class="info sh">add-ons</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-i">4</span>
+          <div class="step-text">
+            <h2 class="h2 sh">step 4</h2>
+            <p class="info sh">summary</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  
+    <!-- Sidebar end -->
+  
+    <div class="formarea container">
+      <h2 class="h1" id="step-title">Personal info</h2>
+      <p class="info" id="step-info">Please provide your name, email address, and phone number.</p>
+      <!-- Step 1 start -->
+      <form class="form active" id="step-1">
+        <div class="label">
+          <label class="h2" for="name">Name</label>
+        </div>
+        <input id="name" autocomplete="none" class="step-1" type="text" placeholder="e.g. Stephen King">
+        <div class="label">
+          <label class="h2" for="email">Email Address</label>
+        </div>
+        <input id="email" autocomplete="none" class="step-1" type="email" placeholder="e.g. stephenking@lorem.com">
+        <div class="label">
+          <label class="h2" for="phoneNumber">Phone Number</label>
+        </div>
+        <input id="phoneNumber" autocomplete="none" class="step-1" type="tel" placeholder="e.g. 0995671784">
+      </form>
+      <!-- Step 1 end -->
+
+      <!-- Step 2 start -->
+      <form class="form" id="step-2">
+        <div class="radio">
+          <div class="arc checked">
+            <img src="./assets/images/icon-arcade.svg" alt="">
+            <div class="text">
+              <label for="arc">Arcade</label>
+              <span class="price">$90/yr</span>
+              <span class="gift">2 months free</span>
+            </div>
+            <input type="radio" name="plan" id="arc">
+          </div>
+          <div class="adv">
+            <img src="./assets/images/icon-advanced.svg" alt="">
+            <div class="text">
+              <label for="adv">Advance</label>
+              <span class="price">$120/yr</span>
+              <span class="gift">2 months free</span>
+            </div>
+            <input type="radio" name="plan" id="adv">
+          </div>
+          <div class="pro">
+            <img src="./assets/images/icon-pro.svg" alt="">
+            <div class="text">
+              <label for="pro">Pro</label>
+              <span class="price">$150/yr</span>
+              <span class="gift">2 months free</span>
+            </div>
+            <input type="radio" name="plan" id="pro">
+          </div>
+        </div>
+        <div class="type">
+          <label for="type">Monthly</label>
+          <input type="checkbox" name="type" id="type" checked>
+          <label for="type">Yearly</label>
+        </div>
+      </form>
+      <!-- Step 2 end -->
+      <!-- Step 3 start -->
+      <form class="form" id="step-3">
+        <div class="checkbox">
+          <div class="box">
+            <input type="checkbox" name="adds" id="add-ons">
+            <div class="text">
+              <label for="adds">Online service</label>
+              <p>Access to multiplayer games</p>
+            </div>
+            <span class="price">+$1/mo</span>
+          </div>
+          <div class="box">
+            <input type="checkbox" name="adds" id="add-ons">
+            <div class="text">
+              <label for="adds">Larger storage</label>
+              <p>Extra 1TB of cloud save</p>
+            </div>
+            <span class="price">+$2/mo</span>
+          </div>
+          <div class="box">
+            <input type="checkbox" name="adds" id="add-ons">
+            <div class="text">
+              <label for="adds">Customizable Profile</label>
+              <p>Custom theme on your profile</p>
+            </div>
+            <span class="price">+$2/mo</span>
+          </div>
+        </div>
+      </form>  
+      <!-- Step 3 end -->
+
+      <!-- Step 4 start -->
+      <div class="form" id="step-4">
+        <div class="box">
+          <div class="text">
+            <span id="result-plan" class="f-plan">Arcade (Monthly)</span>
+            <span id="change">Change</span>
+          </div>
+          <span class="f-price">$90/yr</span>
+        </div>
+        <!-- <div class="box">
+          <div class="text">
+            <span class="f-add">Online service</span>
+          </div>
+          <span class="f-price add">$90/yr</span>
+        </div>
+        <div class="box">
+          <div class="text">
+            <span class="f-add">Larger storage</span>
+          </div>
+          <span class="f-price add">$90/yr</span>
+        </div>
+        <div class="box">
+          <div class="text">
+            <span class="f-add">Customizable profile</span>
+          </div>
+          <span class="f-price add">$90/yr</span>
+        </div> -->
+        <!-- <div class="box">
+          <div class="text">
+            <span class="f-add">Total (per year)</span>
+          </div>
+          <span class="f-price tot">$120/yr</span>
+        </div> -->
+      </div>
+    
+      <!-- Step 4 end -->
+    
+      <!-- Step 5 start -->
+
+      <div class="form" id="step-5">
+        <img src="./assets/images/icon-thank-you.svg" alt="">
+        <h2 class="h1">Thank you!</h2>
+        <p class="info">Thanks for confirming your subscription! We hope you have fun 
+          using our platform. If you ever need support, please feel free 
+          to email us at support@loremgaming.com.</p>
+      </div>
+      <!-- Thank you!
+    
+      Thanks for confirming your subscription! We hope you have fun 
+      using our platform. If you ever need support, please feel free 
+      to email us at support@loremgaming.com. -->
+    
+      <!-- Step 5 end -->
+
+      <footer id="footer">
+        <button id="go-back">Go Back</button>
+        <button id="next-btn" type="submit">Next Step</button>
+      </footer>
+    </div>
+    
+  
+  
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
