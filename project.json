@@ -1,5 +1,13 @@
 [
   {
+    "id": 0,
+    "name": "Bondi Theme",
+    "details": "My First Bootstrap project, built from a youtube course by Osama Elzero",
+    "img": "./assets/img/projects/bondi.png",
+    "liveUrl": "./projects/51-Bondi-theme",
+    "repoUrl": "https://github.com/husamasaad/bondi-theme"
+  },
+  {
     "id": 1,
     "name": "Chessboard",
     "details": "a simple chessboard application built with JavaScript and HTML. It allows you to play chess with a friend on the same device by clicking on the squares to move the pieces.",
@@ -8,7 +16,7 @@
     "repoUrl": "https://github.com/husamasaad/personal-portfolio/tree/main/projects/49-Chess"
   },
   {
-    "id" : 2,
+    "id": 2,
     "name": "Space Tourism",
     "details": "This is a solution to the Space tourism website challenge on Frontend Mentor, I built with the help of Kevin Powell tutorial",
     "img": "./assets/img/projects/spaceTourism.png",
