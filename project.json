@@ -1,5 +1,12 @@
 [
   {
+    "name": "Frontend Bootcamp",
+    "details": "This Project was built using bootstrap with the help of travers media course on youtube",
+    "img": "./assets/img/projects/frontEndBootcamp.png",
+    "liveUrl": "./projects/52-FrontEndBootcampWebsite",
+    "repoUrl": "https://github.com/husamasaad/personal-portfolio/tree/main/projects/52-FrontEndBootcampWebsite"
+  },
+  {
     "id": 0,
     "name": "Bondi Theme",
     "details": "My First Bootstrap project, built from a youtube course by Osama Elzero",
